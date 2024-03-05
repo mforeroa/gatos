@@ -12,7 +12,6 @@ export default function Detail() {
         .then((data) => data.json())
         .then((data) => {
             const masc = data.find((m) => m.id === Number(params.mascotaId));
-            console.log(masc);
             setDetail(masc);
         });
     });
